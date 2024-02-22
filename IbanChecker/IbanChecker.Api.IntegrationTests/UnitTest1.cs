@@ -75,6 +75,5 @@ public sealed class UnitTest1 : IDisposable
         validator
             .Received()
             .IsValid(iban);
-        Assert.True(true);
     }
 }

@@ -41,7 +41,6 @@ public sealed class UnitTest1 : IDisposable
         // Assert
         Assert.True(response.IsSuccessStatusCode, await response.Content.ReadAsStringAsync());
         Assert.Equal("true", await response.Content.ReadAsStringAsync());
-        Assert.True(true);
     }
 
     [Fact]
@@ -75,6 +74,5 @@ public sealed class UnitTest1 : IDisposable
         validator
             .Received()
             .IsValid(iban);
-        Assert.True(true);
     }
 }
